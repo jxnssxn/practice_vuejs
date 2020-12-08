@@ -15,6 +15,9 @@
         <p>see the text?<input type="text" v-model="message"></p>
         <p><button v-on:click="changeMessage()">klicka här</button></p>
       </div>
+      <p v-if="showInfo">This shows some info</p>
+      <button v-on:click="toggleInfo()">Toggle the info</button>
+      <!-- <p> <input type="" v-model="newFruit"><button> v-on:click=add fruit"</button></p> -->
       <div>
         <ol>
           <li v-for="todo in todos">

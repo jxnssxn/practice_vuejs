@@ -10,9 +10,13 @@ var app = new Vue({
     };
   },
   methods: {
+    addIt: function () {
+      console.log("solving this now..");
+      console.log(parseInt(this.number1) + parseInt(this.number2) + parseInt(this.number3));
+    },
     multiplyIt: function () {
       console.log("solving this now..");
       console.log(parseInt(this.number1) * parseInt(this.number2) * parseInt(this.number3));
-    },
+    }
   }
 });
